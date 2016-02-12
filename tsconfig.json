@@ -5,11 +5,12 @@
     "noImplicitAny": false,
     "outDir": "built",
     "rootDir": ".",
-    "sourceMap": true
+    "sourceMap": true,
+    "jsx": "react"
   },
   "exclude": ["node_modules"],
   "files": [
-    "app.ts",
+    "app.tsx",
     "typings/tsd.d.ts",
     "server.ts",
     "missing_tsd/webpack-dev-middleware.d.ts",
