@@ -8,5 +8,11 @@
     "sourceMap": true
   },
   "exclude": ["node_modules"],
-  "files": ["app.ts", "typings/tsd.d.ts", "server.ts"]
+  "files": [
+    "app.ts",
+    "typings/tsd.d.ts",
+    "server.ts",
+    "missing_tsd/webpack-dev-middleware.d.ts",
+    "missing_tsd/webpack-hot-middleware.d.ts"
+  ]
 }
