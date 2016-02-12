@@ -6,6 +6,7 @@
   "dependencies": {
     "express": "^4.13.4",
     "jquery": "^2.2.0",
+    "morgan": "^1.6.1",
     "ts-loader": "^0.8.1",
     "typescript": "^1.7.5",
     "webpack": "^1.12.13"
