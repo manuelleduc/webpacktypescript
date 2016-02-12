@@ -1,0 +1,7 @@
+/.idea
+/built
+**/*.js
+**/*.js.map
+/node_modules
+!webpack.config.js
+/typings
