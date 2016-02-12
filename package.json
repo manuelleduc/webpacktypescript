@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "express": "^4.13.4",
     "jquery": "^2.2.0",
     "ts-loader": "^0.8.1",
     "typescript": "^1.7.5",
