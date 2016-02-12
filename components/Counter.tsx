@@ -38,7 +38,7 @@ class Counter extends Component<ISomeComponentProps, {}> {
             </p>
         );
     }
-};
+}
 
 module Counter {}
 
