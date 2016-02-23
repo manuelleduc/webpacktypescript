@@ -1,4 +1,4 @@
-import {counter} from "../reducers";
+import {mainReducer} from "../reducers";
 import {createStore, applyMiddleware} from "redux";
 import * as createLogger from "redux-logger";
 import * as thunk from "redux-thunk";
@@ -11,7 +11,7 @@ module Store {
             (): any;
         }
         const middle = <Mcb>applyMiddleware(loggerMiddleware, thunk);
-        return createStore(counter, initialState, middle);
+        return createStore(mainReducer, initialState, middle);
     }
 }
 
