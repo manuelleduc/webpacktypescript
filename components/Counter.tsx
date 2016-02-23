@@ -10,21 +10,13 @@ interface ISomeComponentProps {
 }
 
 class Counter extends Component<ISomeComponentProps, {}> {
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         return (
             <p>
                 Clicked: {this.props.value} times
-
                 <button onClick={this.props.onIncrement}>+</button>
-
                 <button onClick={this.props.onDecrement}>-</button>
-
                 <button onClick={this.props.incrementIfOdd}>Increment if odd</button>
-
                 <button onClick={this.props.incrementAsync}>Increment async</button>
             </p>
         );
