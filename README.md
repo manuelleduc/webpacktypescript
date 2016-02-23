@@ -7,3 +7,5 @@ This is a proof of concept with :
  * flux (redux)
  * mongodb
  * ...
+
+# How to start

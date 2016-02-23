@@ -51,15 +51,21 @@ app.get("/api/counter", (req, response) => {
 
 app.post("/api/counter/inc", (req, response) => {
     CounterModel.findOneAndUpdate({}, { "$inc": { value: 1 }}, {"new": true}, (err, res) => {
-        // TODO : error handling
-        response.json(res);
+        if (err) {
+            response.status(500).json(err);
+        } else {
+            response.json(res);
+        }
     });
 });
 
 app.post("/api/counter/desc", (req, response) => {
     CounterModel.findOneAndUpdate({}, { "$inc": { value: -1 }}, {"new": true}, (err, res) => {
-        // TODO : error handling
-        response.json(res);
+        if (err) {
+            response.status(500).json(err);
+        } else {
+            response.json(res);
+        }
     });
 });
 
