@@ -21,6 +21,12 @@ module Actions {
             }
         };
     }
+
+    export function incrementAsync () {
+        return (dispatch) => {
+            setTimeout(() => { dispatch(increment()); }, 1000);
+        };
+    }
 }
 
 export = Actions;

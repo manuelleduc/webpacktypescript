@@ -6,21 +6,12 @@ interface ISomeComponentProps {
     onIncrement(): any;
     onDecrement(): any;
     incrementIfOdd(): any;
+    incrementAsync(): any;
 }
 
 class Counter extends Component<ISomeComponentProps, {}> {
     constructor(props) {
         super(props);
-    }
-
-    /*incrementIfOdd() {
-        if (this.props.value % 2 !== 0) {
-            this.props.onIncrement();
-        }
-    }*/
-
-    incrementAsync() {
-        setTimeout(this.props.onIncrement, 1000);
     }
 
     render() {
@@ -32,9 +23,9 @@ class Counter extends Component<ISomeComponentProps, {}> {
 
                 <button onClick={this.props.onDecrement}>-</button>
 
-                <button onClick={this.props.incrementIfOdd }>Increment if odd</button>
+                <button onClick={this.props.incrementIfOdd}>Increment if odd</button>
 
-                <button onClick={e => this.incrementAsync() }>Increment async</button>
+                <button onClick={this.props.incrementAsync}>Increment async</button>
             </p>
         );
     }
