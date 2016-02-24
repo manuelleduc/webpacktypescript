@@ -1,3 +1,5 @@
+import {IState} from "../store";
+
 module Actions {
     export const INCREMENT  = "INCREMENT";
     export const DECREMENT = "DECREMENT";
@@ -34,8 +36,8 @@ module Actions {
     }
 
     export function incrementIfOdd () {
-        return (dispatch, getState) => {
-            const cptr = getState().counter;
+        return (dispatch, getState: () => IState) => {
+            const cptr: number = getState().counter;
             if (cptr % 2 !== 0) {
                 dispatch(increment());
             }

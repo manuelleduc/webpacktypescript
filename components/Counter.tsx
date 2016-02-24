@@ -1,13 +1,9 @@
 import {Component} from "react";
 import * as React from "react";
+import {IState} from "../store";
 
 interface ISomeComponentProps {
-    state: {
-        state: {
-            isLoaded: boolean
-        },
-        counter: number
-    };
+    state: IState;
     onIncrement(): any;
     onDecrement(): any;
     incrementIfOdd(): any;

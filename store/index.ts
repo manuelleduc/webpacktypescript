@@ -6,7 +6,16 @@ import * as thunk from "redux-thunk";
 module Store {
     const loggerMiddleware = (createLogger as any)();
 
-    export function configureStore (initialState?) {
+    export interface IStateState {
+        isLoaded: boolean;
+    }
+
+    export interface IState {
+        counter: number;
+        state: IStateState;
+    }
+
+    export function configureStore (initialState?: IState) {
         interface Mcb {
             (): any;
         }
