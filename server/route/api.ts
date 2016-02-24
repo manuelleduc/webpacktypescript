@@ -30,7 +30,7 @@ module ApiRouter {
         });
     });
 
-    apiRouter.post("/counter/desc", (req, response) => {
+    apiRouter.post("/counter/dec", (req, response) => {
         decrementCounter((err, res) => {
             if (err) {
                 response.status(500).json(err);
